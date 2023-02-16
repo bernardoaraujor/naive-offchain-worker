@@ -3,6 +3,7 @@ members = [
     "node",
     "pallets/template",
     "runtime",
+    "naive-ocw-exploiter",
 ]
 [profile.release]
 panic = "unwind"
