@@ -17,7 +17,7 @@ Nevertheless, it is a common mistake that Runtime Engineers make unsafe assumpti
 ## FRAME's Offchain Worker Example
 
 [FRAME's Offchain Worker Example Pallet](https://github.com/paritytech/substrate/tree/master/frame/examples/offchain-worker) is a small demo of Offchain Worker capabilities.
-It provides a simple oracle for `BTC/USD` price based on [`CryptoCompare`](cryptocompare.com)'s API.
+It provides a simple oracle for `BTC/USD` price based on [`CryptoCompare`](https://cryptocompare.com)'s API.
 
 While this example pallet does come with a warning that this code should not be used in production, it has become common practice in the Substrate Ecosystem to reproduce the design patterns showcased there without much consideration. As a consequence, many projects are going into production with attack vectors that come from their naive design assumptions.
 
