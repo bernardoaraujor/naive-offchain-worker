@@ -29,4 +29,35 @@ The crate under [`naive-ocw-exploiter`](/naive-ocw-exploiter) directory contains
 
 This project was written with the purpose of exposing the vulnerabilities that arise from the naive design patterns coming from `pallet_example_offchain_worker`. Hopefully, this can lead to more awareness on the potential pitfalls of Offchain Workers.
 
+## Instructions
+
+1. Build the node:
+```
+$ cargo build --release
+```
+
+2. Start the node:
+```
+$ ./target/release/node-template --dev
+```
+
+3. Load OCW keys into node:
+```
+$ ./inject_keys.sh
+```
+
+4. Open PolkadotJS Apps, go to `Developer`->`Chain state`->`ocwExample`->`prices()`. Observe the (truthful) `BTC/USD` prices being written by the OCW:
+
+![](https://raw.githubusercontent.com/bernardoaraujor/naive-offchain-worker/main/true_prices.png "").
+
+5. On a new terminal, start the `naive-ocw-exploiter`:
+```
+$ cd naive-ocw-exploiter;
+$ cargo run
+```
+
+6. On PolkadotJS Apps, observe the tampered `BTC/USD` prices being written by `naive-ocw-exploiter`:
+
+![](https://raw.githubusercontent.com/bernardoaraujor/naive-offchain-worker/main/tampered_prices.png "").
+
 
