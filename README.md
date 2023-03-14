@@ -25,7 +25,7 @@ While this example pallet does come with a warning that this code should not be 
 
 This repository is simply a `substrate-node-template` equipped with `pallet_example_offchain_worker`.
 
-The crate under [`naive-ocw-exploiter`](/naive-ocw-exploiter) directory contains a [`subxt`](https://github.com/paritytech/subxt/)-based application that uses `Alice`'s credentials to maliciously tamper the on-chain `BTC/USD` price average.
+The crate under [`naive-ocw-exploiter`](/naive-ocw-exploiter) directory contains a [`subxt`](https://github.com/paritytech/subxt/)-based application that maliciously tampers the on-chain `BTC/USD` price average via unsigned and signed (as `Alice`) transactions.
 
 This project was written with the purpose of exposing the vulnerabilities that arise from the naive design patterns coming from `pallet_example_offchain_worker`. Hopefully, this can lead to more awareness on the potential pitfalls of Offchain Workers.
 
