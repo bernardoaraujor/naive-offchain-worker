@@ -41,7 +41,7 @@ $ cargo build --release
 $ ./target/release/node-template --dev
 ```
 
-3. Load OCW keys into node:
+3. On a new terminal, load OCW keys into node:
 ```
 $ ./inject_keys.sh
 ```
@@ -50,7 +50,7 @@ $ ./inject_keys.sh
 
 ![](https://raw.githubusercontent.com/bernardoaraujor/naive-offchain-worker/main/true_prices.png "").
 
-5. On a new terminal, start the `naive-ocw-exploiter`:
+5. Start the `naive-ocw-exploiter`:
 ```
 $ cd naive-ocw-exploiter;
 $ cargo run
